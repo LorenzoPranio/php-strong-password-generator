@@ -13,6 +13,14 @@
     <title>PHP Strong Password Generator</title>
 </head>
 <body>
-    
+    <div class="container">
+        <form action="./index.php" method="GET">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Password Generata</label>
+                <input type="number" class="form-control" min="12" max="25" name="numbergen">
+            </div>
+            <button type="submit" class="btn btn-primary">Genera</button>
+        </form>
+    </div>
 </body>
 </html>
