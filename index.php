@@ -20,14 +20,14 @@
     <div class="container">
         <form action="./index.php" method="GET">
             <div class="mb-3">
-                <label class="form-label">Password Generata</label>
-                <input type="number" class="form-control" min="12" max="25" name="numbergen">
+                <label class="form-label"><h3>Password Generata</h3></label>
+                <div class="col-2">
+                    <input type="number" value="<?php echo $_GET['numbergen'] ?? 12; ?>" class="form-control" min="12" max="25" name="numbergen">
+                </div>
             </div>
             <button type="submit" class="btn btn-primary">Genera</button>
         </form>
-        <?php if(isset($yourPassword)){
-        echo $yourPassword;
-        } ?>
+        <textarea rows="1" cols="27" class="mt-4"><?php if(isset($yourPassword)){ echo $yourPassword; } ?></textarea>
     </div>
 </body>
 </html>
