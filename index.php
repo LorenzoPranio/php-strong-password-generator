@@ -27,11 +27,14 @@
     <div class="container">
         <form action="./index.php" method="GET">
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Password Generata</label>
+                <label class="form-label">Password Generata</label>
                 <input type="number" class="form-control" min="12" max="25" name="numbergen">
             </div>
             <button type="submit" class="btn btn-primary">Genera</button>
         </form>
+        <?php if(isset($yourPassword)){
+        echo $yourPassword;
+        } ?>
     </div>
 </body>
 </html>
