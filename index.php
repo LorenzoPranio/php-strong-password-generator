@@ -7,6 +7,10 @@
         }
         return $password;
     }
+
+    if(isset($_GET['numbergen']) && $_GET['numbergen'] !==''){
+        $yourPassword=passwordGen($_GET['numbergen']);
+    }
 ?>
 
 <!DOCTYPE html>
